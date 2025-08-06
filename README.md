@@ -2,23 +2,31 @@
 
 This is a full-stack Amazon-like e-commerce web application built with React.js(Vite+tailwind), Node.js, Express, and MySQL. It allows users to sign up, log in, browse products by category, add items to their cart, place orders, and view order history.
 
-🚀 Features
+🚀 Features Implemented:
 
-✅ User Features
-- User authentication (signup/login)
-- Browse products by categories
-- View detailed product info
-- Add products to cart
-- Place orders via:
-  - 🛒 Cart checkout
-  - ⚡ "Buy Now" button
-- View all past orders (grouped by order)
-- Remove items from cart
+ 1)Product listing by category
 
-✅ Admin Features (Coming Soon)
-- Add/edit/delete products
-- Manage categories
-- View all orders
+ 2)Product details page with image and pricing
+
+ 3)Add to Cart & Buy Now functionality
+
+ 4)Order placement and order history
+
+ 5)Manager and admin control panel (UI designed)
+
+🛠️ Upcoming Updates:
+
+ 1)Authentication and Authorization using JWT
+
+ 2)Role-based access: Customer / Manager / Admin
+
+ 3)Admin features: Add/Delete products, manage users
+
+ 4)Manager features: Category and product management
+
+ 5)Real-time Messenger (for users to chat)
+
+ 6)AI Chatbot to assist users with product search & FAQs
 
 🧰 Tech Stack
 
