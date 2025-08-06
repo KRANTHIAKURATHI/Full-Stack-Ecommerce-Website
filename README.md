@@ -1,6 +1,6 @@
-🛒 Full Stack E-Commerce Website (Amazon Clone)
+🛒 Full Stack E-Commerce Website
 
-This is a full-stack Amazon-like e-commerce web application built with React.js(Vite+tailwind), Node.js, Express, and MySQL. It allows users to sign up, log in, browse products by category, add items to their cart, place orders, and view order history.
+This is a full-stack e-commerce web application built with React.js(Vite+tailwind), Node.js, Express, and MySQL. It allows users to sign up, log in, browse products by category, add items to their cart, place orders, and view order history.
 
 🚀 Features Implemented:
 
@@ -38,7 +38,7 @@ React Router DOM     | REST API              |          | dotenv, bcrypt
 📁 Project Structure
 
 .
-├── FRONTEND
+├── UI
 │   ├── src
 │   │   ├── Pages/
 │   │   ├── API.js
