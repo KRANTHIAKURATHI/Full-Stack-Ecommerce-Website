@@ -71,7 +71,7 @@ npm start
 
 3. Setup the frontend
 ```
-cd FRONTEND
+cd UI
 npm install
 npm run dev
 ```
@@ -99,7 +99,3 @@ npm run dev
 A. Kranthi Kumar
 📧 (akurathikranthi12@gmail.com)
 🔗 https://github.com/KRANTHIAKURATHI
-
-📄 License
-
-This project is licensed under the MIT License.
