@@ -3,7 +3,7 @@ const DBConnect = require('../database');
 
 const router = express.Router();
 
-// ✅ User Registration
+//User Registration
 router.post('/user', async (req, res) => {
   const { fullname, phonenumber, emailID, password } = req.body;
 
@@ -33,7 +33,7 @@ router.post('/user', async (req, res) => {
   }
 });
 
-// ✅ User Login
+//User Login
 router.get('/userlogin', async (req, res) => {
   const { emailID, password } = req.query;
 
@@ -41,8 +41,7 @@ router.get('/userlogin', async (req, res) => {
     return res.status(400).json({ error: 'Email and password required' });
   }
 
-  let db; // Declare db in outer scope so finally block can use it
-
+  let db;
   try {
     db = await DBConnect();
     const [result] = await db.query(
@@ -66,7 +65,6 @@ router.get('/userlogin', async (req, res) => {
   } catch (error) {
     res.status(500).json({ success: false, error: error.message });
   } finally {
-    // Optional: Only close if you're not using a pool
     if (db && typeof db.close === 'function') {
       db.close();
     }
