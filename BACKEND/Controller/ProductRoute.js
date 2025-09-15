@@ -3,7 +3,7 @@ const connectDB = require('../database');
 
 const router = express.Router();
 
-// ✅ Route to fetch all products with category name
+//Route to fetch all products with category name
 router.get('/products', async (req, res) => {
   let db;
   try {
@@ -25,7 +25,7 @@ router.get('/products', async (req, res) => {
   }
 });
 
-// ✅ Route to fetch a single product by its product_id with category name
+//Route to fetch a single product by its product_id with category name
 router.get('/products/:product_id', async (req, res) => {
   let db;
   try {
@@ -56,7 +56,7 @@ router.get('/products/:product_id', async (req, res) => {
   }
 });
 
-// ✅ Route to fetch products by category_id (with category name)
+//Route to fetch products by category_id (with category name)
 router.get('/products/category_id/:category_id', async (req, res) => {
   let db;
   try {
