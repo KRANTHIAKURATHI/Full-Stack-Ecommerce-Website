@@ -2,7 +2,7 @@ const express = require('express');
 const connectDB = require('../database');
 const router = express.Router();
 
-// ✅ Get user's cart
+//Get user's cart
 router.get('/cart/:user_id', async (req, res) => {
   let db;
   try {
@@ -32,7 +32,7 @@ router.get('/cart/:user_id', async (req, res) => {
   }
 });
 
-// ✅ Add product to cart
+//Add product to cart
 router.post('/cart/add/:product_id', async (req, res) => {
   let db;
   try {
@@ -74,7 +74,7 @@ router.post('/cart/add/:product_id', async (req, res) => {
   }
 });
 
-// ✅ Remove product from cart
+//Remove product from cart
 router.delete('/cart/remove/:product_id', async (req, res) => {
   let db;
   try {
@@ -103,7 +103,7 @@ router.delete('/cart/remove/:product_id', async (req, res) => {
   }
 });
 
-// ✅ Place order from cart
+// Place order from cart
 router.post('/cart/placeorder/:user_id', async (req, res) => {
   let db;
   try {
