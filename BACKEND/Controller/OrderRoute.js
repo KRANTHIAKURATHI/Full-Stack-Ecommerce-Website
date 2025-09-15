@@ -3,7 +3,7 @@ const connectDB = require('../database');
 
 const router = express.Router();
 
-// ✅ Get all grouped orders for a user
+//Get all grouped orders for a user
 router.get('/orders/:user_id', async (req, res) => {
   let db;
   try {
@@ -52,7 +52,7 @@ router.get('/orders/:user_id', async (req, res) => {
   }
 });
 
-// ✅ Buy Now (Single Product Order)
+//Buy Now (Single Product Order)
 router.post('/orders/buy_now', async (req, res) => {
   let db;
   try {
@@ -80,7 +80,7 @@ router.post('/orders/buy_now', async (req, res) => {
   }
 });
 
-// ✅ Place Order From Cart
+//Place Order From Cart
 router.post('/orders/place_from_cart/:user_id', async (req, res) => {
   let db;
   try {
@@ -123,7 +123,6 @@ router.post('/orders/place_from_cart/:user_id', async (req, res) => {
     }
 
     await db.query('DELETE FROM cart_items WHERE cart_id = ?', [cart_id]);
-    // 🔥 Removed: await db.query('UPDATE cart SET amount = 0 WHERE cart_id = ?', [cart_id]);
 
     await db.commit();
     res.json({ success: true, message: 'Order placed successfully', order_id });
