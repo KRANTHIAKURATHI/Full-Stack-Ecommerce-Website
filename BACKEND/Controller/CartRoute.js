@@ -2,7 +2,7 @@ const express = require('express');
 const connectDB = require('../database');
 const router = express.Router();
 
-//Get user's cart
+//Get users cart
 router.get('/cart/:user_id', async (req, res) => {
   let db;
   try {
