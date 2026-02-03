@@ -16,6 +16,7 @@ This is a full-stack e-commerce web application built with React.js(Vite+tailwin
 
 🛠️ Upcoming Updates:
 
+
  1)Authentication and Authorization using JWT
 
  2)Role-based access: Customer / Manager / Admin
